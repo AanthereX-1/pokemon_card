@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <title>Hello, world!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:'Poppins', sans-serif;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+            background: url(./bg-pokemon.jpg) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .pokemon-card {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .wrapper {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+
+        }
+
+        .card {
+            backdrop-filter: blur(5px);
+            background: rgba(255, 247, 0, 0.3);
+            width: 20rem !important;
+            height: 25rem !important;
+            border-radius: 30px;
+        }
+
+        .pikachu-cont {
+            width: auto !important;
+            height: auto !important;
+            display: grid;
+            place-items: center;
+        }
+
+        .badge {
+            padding: 0.6rem;
+        }
+
+        #icon {
+            width: 24px;
+            height: 24px;
+            border: 1px solid black;
+            border-radius: 50%;
+            padding: 0.25rem;
+        }
+
+        .info {
+            display:flex;
+        }
+
+        .weakness{
+            display: flex;
+            gap: 1rem;
+        }
+
+        .para {
+            border: 1px solid silver;
+            transform:skew(-30deg);
+            box-shadow: 5px -5px 10px silver;
+            color: black !important;
+        }
+
+        .flex-power {
+            display: flex;
+            gap: 0.8rem;
+            font-size: 0.8rem;
+        }
+        .flex-power2 {
+            display: flex;
+            gap:0.1rem;
+            font-size: 0.8rem;
+        }
+
+        .card img {
+            background-position: center;
+            background-size: cover;
+            width: 15rem;
+            height: 8rem;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="pokemon-card">
+            <div class="card">
+                <div class="container mt-4 ml-4">
+                    <div class="flex">
+                        <span class="badge badge-pill badge-warning">Basic</span>
+                        <span class="ml-2 fs-5">Pikachu Libre</span>
+                        <p class="badge badge-pill badge-danger ml-4" style="font-size: 0.1rem;">HP</p>
+                        <span class="badge badge-pill badge-warning">80</span>
+                    </div>
+
+                </div>
+
+                <div class="pikachu-cont">
+                    <img src="./pikachu.png" alt="pokemon-image">
+                </div>
+                <div class="card-body">
+                        <div class="flex-power mb-2">
+                            <img id="icon" src="./star.png" alt="star">
+                            <img id="icon" src="./star.png" alt="star">
+                            <div class="card-title text-center ml-3">Quick Attack</div>
+                            <span class="ml-auto">30+</span>
+                        </div>
+                        <div class="card-text m-1" style="font-size:x-small;">Flip a Coin if heads, this attack does 30 more damage</div>
+                
+                    <div class="flex-power2 mt-3">
+                        <img id="icon" src="./lightening (2).png" alt="star">
+                        <img id="icon" src="./star.png" alt="star">
+                        <img id="icon" src="./star.png" alt="star">
+                        <div class="card-title text-center ml-3">Flying Elekick</div>
+                        <span class="ml-auto">50</span>
+                    </div>
+                   
+                    <div class="info m-2">
+                        <div class="col-6 weakness d-inline-block">
+                            <span class="" style="font-size:0.5rem;">weakness</span>
+                            <span class="" style="font-size:0.7rem;"><img id="icon" src="./fist.png" alt="thumb">x2</span>
+                            <span class="" style="font-size:0.5rem;">resistance</span>
+                            <span class="" style="font-size:0.7rem;"><img id="icon" src="./fist.png" alt="thumb">x2</span>
+                        </div>
+                        <div class="col-6 para" style="font-size: 0.3rem; color: black;">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, molestias?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

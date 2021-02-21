@@ -35,6 +35,10 @@
             border-radius: 30px;
         }
 
+        #upper-header span{
+            text-shadow: none;
+        }
+
         .pikachu-cont {
             width: auto !important;
             height: auto !important;
